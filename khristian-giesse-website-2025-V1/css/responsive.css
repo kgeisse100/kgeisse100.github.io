@@ -1,0 +1,140 @@
+/* Additional responsive styles for Khristian Giesse Website */
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav li {
+        margin: 0.8rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 3.8rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .social-links {
+        gap: 1.5rem;
+    }
+    
+    .social-link {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    
+    .spotify-container iframe {
+        height: 300px;
+    }
+}
+
+/* Ensure touch-friendly targets */
+@media (hover: none) {
+    .main-nav a, 
+    .social-link {
+        padding: 1rem;
+    }
+    
+    .work-item {
+        cursor: pointer;
+    }
+}
+
+/* Landscape orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .landing-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 4rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+}
+
+/* High-resolution displays */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
+    .pattern-overlay {
+        background-size: 200px 200px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-color: #1a1a1a;
+        --dark-color: #f7f7f7;
+    }
+    
+    .work-item h4 {
+        background-color: #2a2a2a;
+        color: #f7f7f7;
+    }
+    
+    .about-section {
+        background-color: #222;
+    }
+    
+    .placeholder-text {
+        color: #aaa;
+    }
+}
+
+/* Print styles */
+@media print {
+    .main-nav,
+    .social-links,
+    .spotify-embed,
+    footer {
+        display: none;
+    }
+    
+    .landing-section,
+    .about-section,
+    .portfolio-section {
+        padding: 1rem 0;
+        height: auto;
+    }
+    
+    .landing-section::before {
+        display: none;
+    }
+    
+    body, .landing-section {
+        background: white;
+        color: black;
+    }
+    
+    .hero-content h1,
+    .hero-content h2,
+    .section-title {
+        color: black;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Explore Khristian Giesse's portfolio - Music releases, live performances, and scoring work. Featuring Spotify playlists and YouTube videos.">
+    <title>Portfolio | Khristian Giesse</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with actual GA4 tracking ID
+    </script>
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="mode-toggle">
+        <button id="dark-mode-toggle" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+            <span>Dark Mode</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="container">
+            <div class="logo">
+                <h2>KG</h2>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+        </div>
+    </header>
+    
+    <!-- Music Section -->
+    <section class="portfolio-section" id="music">
+        <div class="container">
+            <h2 class="section-title">Music</h2>
+            <p class="section-intro">Explore my musical releases and collaborations.</p>
+            
+            <div class="spotify-embed">
+                <div class="spotify-container">
+                    <iframe src="https://open.spotify.com/embed/playlist/4hg2kRkkETt2uRh7jfowdl?si=6e2a3503d3e54bb8" 
+                            width="100%" height="380" frameborder="0" 
+                            allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            
+            <div class="music-releases">
+                <h3>Selected Releases</h3>
+                <div class="card-layout">
+                    <div class="music-card">
+                        <figure class="music-image">
+                            <img src="images/album-1.jpg" alt="Sonic Pathways album cover" loading="lazy">
+                            <figcaption>Sonic Pathways (2023)</figcaption>
+                        </figure>
+                        <div class="music-info">
+                            <h4>Sonic Pathways</h4>
+                            <p>A collection of experimental guitar compositions blending jazz and electronic elements.</p>
+                            <div class="music-links">
+                                <a href="#" class="music-link"><i class="fab fa-spotify"></i> Spotify</a>
+                                <a href="#" class="music-link"><i class="fab fa-apple"></i> Apple Music</a>
+                                <a href="#" class="music-link"><i class="fab fa-bandcamp"></i> Bandcamp</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="music-card">
+                        <figure class="music-image">
+                            <img src="images/album-2.jpg" alt="Midnight Sessions album cover" loading="lazy">
+                            <figcaption>Midnight Sessions (2022)</figcaption>
+                        </figure>
+                        <div class="music-info">
+                            <h4>Midnight Sessions</h4>
+                            <p>Collaborative R&B project featuring vocals from emerging Los Angeles artists.</p>
+                            <div class="music-links">
+                                <a href="#" class="music-link"><i class="fab fa-spotify"></i> Spotify</a>
+                                <a href="#" class="music-link"><i class="fab fa-apple"></i> Apple Music</a>
+                                <a href="#" class="music-link"><i class="fab fa-bandcamp"></i> Bandcamp</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="music-card">
+                        <figure class="music-image">
+                            <img src="images/album-3.jpg" alt="Echo Chambers album cover" loading="lazy">
+                            <figcaption>Echo Chambers (2021)</figcaption>
+                        </figure>
+                        <div class="music-info">
+                            <h4>Echo Chambers</h4>
+                            <p>Ambient guitar soundscapes created using extended techniques and processing.</p>
+                            <div class="music-links">
+                                <a href="#" class="music-link"><i class="fab fa-spotify"></i> Spotify</a>
+                                <a href="#" class="music-link"><i class="fab fa-apple"></i> Apple Music</a>
+                                <a href="#" class="music-link"><i class="fab fa-bandcamp"></i> Bandcamp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Live Performances Section -->
+    <section class="portfolio-section" id="performances">
+        <div class="container">
+            <h2 class="section-title">Live Performances</h2>
+            <p class="section-intro">Selected live performances and concert highlights.</p>
+            
+            <div class="youtube-embed">
+                <div class="youtube-container">
+                    <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/watch?v=HJjOS9gIi7E&ab_channel=CalArtsHerbAlpertSchoolofMusic" 
+                            title="YouTube Live Performances" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="performances-gallery">
+                <h3>Performance Gallery</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('images/performance-1.jpg', 'The Mint, Los Angeles (2023)')">
+                        <img src="images/performance-1.jpg" alt="Performing at The Mint in Los Angeles" loading="lazy">
+                        <div class="gallery-caption">The Mint, Los Angeles</div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openLightbox('images/performance-2.jpg', 'CalArts Jazz Concert (2022)')">
+                        <img src="images/performance-2.jpg" alt="CalArts Jazz Concert performance" loading="lazy">
+                        <div class="gallery-caption">CalArts Jazz Concert</div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openLightbox('images/performance-3.jpg', '1500 or Nothin Day (2021)')">
+                        <img src="images/performance-3.jpg" alt="Performing at 1500 or Nothin Day" loading="lazy">
+                        <div class="gallery-caption">1500 or Nothin Day</div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openLightbox('images/performance-4.jpg', 'Blue Whale Jazz Club (2022)')">
+                        <img src="images/performance-4.jpg" alt="Performing at Blue Whale Jazz Club" loading="lazy">
+                        <div class="gallery-caption">Blue Whale Jazz Club</div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openLightbox('images/performance-5.jpg', 'With Tish Hyman at The Echo (2023)')">
+                        <img src="images/performance-5.jpg" alt="Performing with Tish Hyman at The Echo" loading="lazy">
+                        <div class="gallery-caption">With Tish Hyman at The Echo</div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openLightbox('images/performance-6.jpg', 'Studio Session (2022)')">
+                        <img src="images/performance-6.jpg" alt="Studio recording session" loading="lazy">
+                        <div class="gallery-caption">Studio Session</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Scoring Work Section -->
+    <section class="portfolio-section" id="scoring">
+        <div class="container">
+            <h2 class="section-title">Scoring Work</h2>
+            <p class="section-intro">Music composed for film, media, and other projects.</p>
+            
+            <div class="youtube-embed">
+                <div class="youtube-container">
+                    <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/videoseries?list=PLdvkl_goy5gEd-y9wqIi76AxDHszv_BHx" 
+                            title="YouTube Scoring Playlist" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="scoring-projects">
+                <h3>Selected Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <div class="project-details">
+                            <h4>Entertainment Tonight Segment</h4>
+                            <p>Original music created for feature segment on emerging artists.</p>
+                            <ul class="project-meta">
+                                <li><strong>Client:</strong> CBS Television</li>
+                                <li><strong>Year:</strong> 2022</li>
+                                <li><strong>Role:</strong> Composer, Producer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-details">
+                            <h4>"After Midnight" Short Film</h4>
+                            <p>Atmospheric score for independent short thriller film.</p>
+                            <ul class="project-meta">
+                                <li><strong>Director:</strong> Sarah Chen</li>
+                                <li><strong>Year:</strong> 2021</li>
+                                <li><strong>Role:</strong> Composer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-details">
+                            <h4>CalArts Student Animation "Echoes"</h4>
+                            <p>Custom soundtrack for award-winning student animation project.</p>
+                            <ul class="project-meta">
+                                <li><strong>Animator:</strong> Michael Torres</li>
+                                <li><strong>Year:</strong> 2023</li>
+                                <li><strong>Role:</strong> Composer, Sound Designer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox for Gallery Images -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+    
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let's Work Together</h2>
+                <p>Interested in collaborating on a project or booking a performance?</p>
+                <a href="contact.html" class="btn primary-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Khristian Giesse</h3>
+                    <p>Guitarist, Producer, Composer</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/khristiangeisse/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@khristiangeissemusic" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="https://soundcloud.com/khristiangeisse0" aria-label="SoundCloud" target="_blank" rel="noopener"><i class="fab fa-soundcloud"></i></a>
+                        <a href="mailto:khristiangeissemusic02@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Khristian Giesse. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script>
+        // Lightbox functionality for gallery
+        function openLightbox(imgSrc, caption) {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox-caption').innerHTML = caption;
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

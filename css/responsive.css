@@ -1,0 +1,348 @@
+/* 
+ * Responsive styles for Khristian Giesse Website
+ * Ensures the site looks great on all devices
+ */
+
+/* ===== LARGER DESKTOPS (1200px and up) ===== */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* ===== DESKTOPS (992px - 1199px) ===== */
+@media screen and (max-width: 1199px) {
+    html {
+        font-size: 60%;
+    }
+    
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 5.5rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        justify-content: flex-start;
+    }
+    
+    .timeline-item:nth-child(even) {
+        justify-content: flex-start;
+    }
+    
+    .timeline-date {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-item:nth-child(even) .timeline-date {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-content {
+        width: 85%;
+        margin-left: 60px;
+    }
+}
+
+/* ===== TABLETS (768px - 991px) ===== */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 57%;
+    }
+    
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .brief-about-content,
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .brief-about-text {
+        padding-right: 0;
+    }
+    
+    .blog-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-sidebar {
+        position: static;
+        margin-top: 4rem;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+/* ===== LANDSCAPE TABLETS AND MOBILE NAVIGATION (767px and down) ===== */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 55%;
+    }
+    
+    .container {
+        max-width: 540px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: right 0.3s ease;
+        padding: 0;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu li {
+        margin: 2rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+    }
+    
+    .featured-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+/* ===== SMARTPHONES (576px and down) ===== */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 52%;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.8rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .post-title {
+        font-size: 2.4rem;
+    }
+    
+    .post-content {
+        padding: 2rem;
+    }
+    
+    .lightbox-content {
+        max-width: 100%;
+    }
+    
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-form-container {
+        padding: 2rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* ===== TINY SCREENS (375px and down) ===== */
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.4rem;
+    }
+    
+    .post-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* ===== LANDSCAPE MODE FOR MOBILE ===== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .landing-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 10rem 0 5rem;
+    }
+    
+    .hero-content {
+        padding-bottom: 3rem;
+    }
+}
+
+/* ===== HIGH RESOLUTION DISPLAYS ===== */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
+    body {
+        background-size: cover;
+    }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .sticky-nav,
+    .mode-toggle,
+    .mobile-menu-toggle,
+    .hero-cta,
+    .contact-cta-section,
+    .social-icons,
+    .footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p {
+        color: black !important;
+        text-shadow: none !important;
+    }
+    
+    .landing-section,
+    .about-section,
+    .portfolio-section,
+    .blog-section,
+    .contact-section {
+        padding: 2rem 0 !important;
+        height: auto !important;
+    }
+    
+    .landing-section::before,
+    section::before {
+        display: none !important;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+    
+    .card, 
+    .skill-card, 
+    .music-card, 
+    .contact-form-container,
+    .blog-post,
+    .sidebar-widget {
+        background-color: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    img {
+        max-width: 500px !important;
+    }
+    
+    .spotify-container,
+    .youtube-container,
+    iframe {
+        display: none !important;
+    }
+    
+    .lightbox {
+        display: none !important;
+    }
+}

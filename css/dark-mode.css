@@ -1,0 +1,131 @@
+/* 
+ * Dark/Light Mode Toggle Styles for Khristian Giesse Website
+ */
+
+/* Dark mode is the default */
+:root {
+    /* Dark mode colors */
+    --primary-color: rgba(0, 0, 0, 0.7);
+    --secondary-color: rgba(20, 20, 20, 0.8);
+    --accent-color: #6c5ce7;
+    --light-color: #ffffff;
+    --dark-color: #121212;
+    --text-color: #ffffff;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Light mode colors */
+body.light-mode {
+    --primary-color: rgba(245, 245, 245, 0.9);
+    --secondary-color: rgba(235, 235, 235, 0.9);
+    --accent-color: #5b4cc4;
+    --light-color: #121212;
+    --dark-color: #ffffff;
+    --text-color: #121212;
+    --overlay-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Light mode visual adjustments */
+body.light-mode {
+    background-image: url('../images/background.png');
+}
+
+body.light-mode::before {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+body.light-mode .sticky-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+    color: var(--light-color);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode p {
+    color: var(--text-color);
+    text-shadow: none;
+}
+
+body.light-mode .nav-link {
+    color: var(--light-color);
+    text-shadow: none;
+}
+
+body.light-mode .mobile-menu-toggle span {
+    background-color: var(--light-color);
+}
+
+body.light-mode #dark-mode-toggle {
+    color: var(--light-color);
+}
+
+body.light-mode .card,
+body.light-mode .skill-card,
+body.light-mode .music-card,
+body.light-mode .project-item,
+body.light-mode .contact-form-container,
+body.light-mode .sidebar-widget {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .timeline-content {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body.light-mode footer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+body.light-mode .footer-nav a,
+body.light-mode .footer-social .social-icons a,
+body.light-mode .footer-bottom p,
+body.light-mode .footer-legal a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .post-meta,
+body.light-mode .post-date {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--light-color);
+}
+
+body.light-mode .form-group input::placeholder,
+body.light-mode .form-group textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .form-group input:focus,
+body.light-mode .form-group textarea:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode toggle button adjustments */
+body.light-mode #dark-mode-toggle i.fa-moon {
+    display: none;
+}
+
+body.light-mode #dark-mode-toggle i.fa-sun {
+    display: inline-block;
+}
+
+#dark-mode-toggle i.fa-sun {
+    display: none;
+}
+
+body.light-mode #dark-mode-toggle span {
+    content: "Light Mode";
+}
