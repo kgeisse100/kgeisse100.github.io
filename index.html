@@ -3,91 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Official website of Khristian Giesse - Guitarist, Producer, and Composer based in Los Angeles, California">
     <title>Khristian Giesse | Guitarist, Producer, Composer</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <!-- External CSS -->
+    <meta name="description" content="Official website of Khristian Giesse - Guitarist, Producer, and Composer based in Los Angeles, California">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
-    
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <!-- Google Fonts - Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX'); // Replace with actual GA4 tracking ID
-    </script>
 </head>
-<body>
-    <!-- Dark/Light Mode Toggle -->
-    <div class="mode-toggle">
-        <button id="dark-mode-toggle" aria-label="Toggle dark/light mode">
-            <i class="fas fa-moon"></i>
-            <span>Dark Mode</span>
-        </button>
-    </div>
+<body>	
+	<!-- Dark/Light Mode Toggle -->
+   <div class="mode-toggle">
+  <button id="dark-mode-toggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon" id="mode-icon"></i>
+    <span id="mode-label">Dark Mode</span>
+  </button>
+</div>
 
-    <!-- Navigation -->
+		
     <nav class="sticky-nav">
         <div class="container">
-            <div class="logo">
-                <h2>KG</h2>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
+	
     
-    <!-- Hero Section -->
+		
+    </div>
     <header class="landing-section" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Khristian Geisse</h1>
+                <h1>Khristian Giesse</h1>
                 <h2>Guitarist, Producer, Composer</h2>
-                <div class="hero-cta">
-                    <a href="portfolio.html" class="btn primary-btn">View Portfolio</a>
-                    <a href="contact.html" class="btn secondary-btn">Get in Touch</a>
-                </div>
                 <div class="hero-images">
-                    <figure class="hero-image centered-image">
-                        <img src="images/IMG_3237.jpg" alt="Khristian Giesse playing guitar" class="profile-image">
-                        <figcaption>Performing live in Los Angeles, 2023</figcaption>
-                    </figure>
+                    <div class="hero-image centered-image">
+                        <img src="images/IMG_7787.jpg" alt="Khristian playing guitar" class="profile-image">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     
-    <!-- Featured Work Section -->
-    <section class="featured-section">
+    <section class="portfolio-section" id="portfolio">
         <div class="container">
-            <h2 class="section-title">Featured Work</h2>
-            <div class="featured-content">
-                <div class="featured-item">
-                    <h3>Latest Release</h3>
+            <h2 class="section-title">Portfolio</h2>
+            <div class="media-container">
+                <div class="spotify-embed">
+                    <h3>Music</h3>
                     <div class="spotify-container">
                         <iframe src="https://open.spotify.com/embed/playlist/4hg2kRkkETt2uRh7jfowdl?si=6e2a3503d3e54bb8" 
                                 width="100%" height="380" frameborder="0" 
@@ -95,133 +65,124 @@
                     </div>
                 </div>
                 
-                <div class="featured-item">
-                    <h3>Recent Performance</h3>
+                <div class="youtube-embed">
+                    <h3>Live Performances</h3>
+                    <div class="youtube-container">
+                        <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                
+                <div class="youtube-embed">
+                    <h3>Scoring</h3>
                     <div class="youtube-container">
                         <iframe width="100%" height="315" 
-                                src="https://www.youtube.com/embed/videoseries?list=PLdvkl_goy5gFr1a6TaQ9yUWZOXB8qYAbE" 
-                                title="YouTube Live Performances" 
+                                src="https://www.youtube.com/embed/videoseries?list=PLdvkl_goy5gEd-y9wqIi76AxDHszv_BHx" 
+                                title="YouTube Scoring Playlist" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-            <div class="view-more">
-                <a href="portfolio.html" class="btn outline-btn">View All Work <i class="fas fa-arrow-right"></i></a>
-            </div>
         </div>
     </section>
     
-    <!-- Brief About Section -->
-    <section class="brief-about-section">
+    <section class="about-section" id="about">
         <div class="container">
-            <div class="brief-about-content">
-                <div class="brief-about-text">
-                    <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
                     <p>
-                        Khristian Geisse is a guitarist, producer, and composer based in <strong>Los Angeles, California</strong>. His musical journey began as a teenager inspired by the guitar work of <em>Jimi Hendrix</em>, <em>Stevie Ray Vaughn</em>, and <em>John Mayer</em>.
+                        Khristian Geisse is a guitarist, producer, and composer based in Los Angeles, California. Khristian began his musical journey as a teenager inspired by the guitar work of Jimi Hendrix, Stevie Ray Vaughn, and John Mayer and began composing while still in high school.
                     </p>
                     <p>
-                        Currently a senior at <u>California Institute of The Arts</u> pursuing a Bachelor of Fine Arts in Instrumental Arts: Guitar, his studies include Jazz, Indian classical music, and Persian classical music.
+                        As a composer and producer, Khristian has worked in a variety of styles ranging from R&B to electronic dance music and psychedelic rock producing for upcoming artists such as Capri Everitt, Breyan Bliss, and The Remedy in addition to his music being featured on Entertainment Tonight and After Midnight.
                     </p>
-                    <a href="about.html" class="btn text-btn">Read More About Khristian <i class="fas fa-chevron-right"></i></a>
-                </div><img src="images/IMG_7787.jpg" alt="Khristian Giesse in the studio" class="about-thumbnail">
-                <div class="brief-about-image">
-                    
+                    <p>
+                        As a guitarist he has performed at the well-known annual 1500 or Nothin Day and has performed alongside Grammy-nominated artists India Shawn and Tish Hyman—the latter for whom he serves as music director.
+                    </p>
+                    <p>
+                        Currently, Khristian is a senior at California Institute of The Arts where he is pursuing a Bachelor of Fine Arts in Instrumental Arts: Guitar. His studies include Jazz, Indian classical music, and Persian classical music with professors such as Woody Aplanalp, Darek Oles, Houman Pourmhedi, Alam Khan, and Miroslav Tadic.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Blog Preview Section -->
-    <section class="blog-preview-section">
+    <section class="contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title">Recent Blog Posts</h2>
-            <div class="card-layout">
-                <article class="card">
-                    <div class="card-image">
-                        <img src="images/IMG_2381.jpg" alt="Music production setup" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">My Approach to Music Production</h3>
-                        <p class="card-excerpt">An inside look at my creative process and the tools I use to produce music that resonates with listeners...</p>
-                        <a href="blog.html#post1" class="card-link">Read More</a>
-                    </div>
-                </article>
-                
-                <article class="card">
-                    <div class="card-image">
-                        <img src="images/IMG_3709_2.jpg" alt="Guitar techniques demonstration" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">5 Guitar Techniques Every Player Should Know</h3>
-                        <p class="card-excerpt">In this post, I break down essential guitar techniques that have significantly improved my playing...</p>
-                        <a href="blog.html#post2" class="card-link">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <div class="view-more">
-                <a href="blog.html" class="btn outline-btn">View All Posts <i class="fas fa-arrow-right"></i></a>
+            <h2 class="section-title">Contact</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/khristiangeisse/" class="social-link" aria-label="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/@khristiangeissemusic" class="social-link" aria-label="YouTube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://soundcloud.com/khristiangeisse0" class="social-link" aria-label="SoundCloud" target="_blank">
+                    <i class="fab fa-soundcloud"></i>
+                    <span>SoundCloud</span>
+                </a>
+                <a href="mailto:khristiangeissemusic02@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
             </div>
         </div>
     </section>
     
-    <!-- Contact CTA Section -->
-    <section class="contact-cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Let's Work Together</h2>
-                <p>Interested in collaborating on a project or booking a performance?</p>
-                <a href="contact.html" class="btn primary-btn">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Khristian Giesse</h3>
-                    <p>Guitarist, Producer, Composer</p>
-                </div>
-                
-                <div class="footer-nav">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/khristiangeisse/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@khristiangeissemusic" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                        <a href="https://soundcloud.com/khristiangeisse0" aria-label="SoundCloud" target="_blank" rel="noopener"><i class="fab fa-soundcloud"></i></a>
-                        <a href="mailto:khristiangeissemusic02@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Khristian Giesse. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
-                </div>
-            </div>
+            <p>&copy; <span id="current-year"></span> Khristian Giesse. All rights reserved.</p>
         </div>
     </footer>
     
-    <!-- JavaScript -->
     <script src="js/script.js"></script>
-    <script src="js/spotify-integration.js"></script>
-    <script src="js/dark-mode.js"></script>
+	<script>
+    document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+	<script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const icon = document.getElementById('mode-icon');
+    const label = document.getElementById('mode-label');
+
+    function setModeVisuals(isDark) {
+        if (isDark) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            label.textContent = 'Light Mode';
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            label.textContent = 'Dark Mode';
+        }
+    }
+
+    // Load saved preference
+    const isDark = localStorage.getItem('darkMode') === 'enabled';
+    if (isDark) {
+        body.classList.add('dark-mode');
+    }
+    setModeVisuals(isDark);
+
+    toggle.addEventListener('click', function () {
+        const nowDark = body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', nowDark ? 'enabled' : 'disabled');
+        setModeVisuals(nowDark);
+    });
+</script>
+
+
 </body>
 </html>
