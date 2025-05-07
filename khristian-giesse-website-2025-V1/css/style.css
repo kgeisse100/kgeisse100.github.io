@@ -483,3 +483,68 @@ footer {
 .fade-in {
     animation: fadeIn 0.8s ease forwards;
 }
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #121212;
+    background-image: none;
+    color: #e0e0e0;
+}
+
+body.dark-mode::before {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode .nav-link,
+body.dark-mode .section-title {
+    color: #e0e0e0;
+    text-shadow: none;
+}
+
+body.dark-mode .sticky-nav {
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+body.dark-mode .about-content,
+body.dark-mode .portfolio-section,
+body.dark-mode .contact-section {
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
+body.dark-mode .social-link:hover {
+    color: #bb86fc;
+}
+
+body.dark-mode footer {
+    background-color: rgba(20, 20, 20, 0.95);
+    color: rgba(255, 255, 255, 0.6);
+}
+.mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    color: var(--accent-color);
+}

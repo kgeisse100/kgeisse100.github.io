@@ -14,7 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>	
+	<!-- Dark/Light Mode Toggle -->
+   <div class="mode-toggle">
+  <button id="dark-mode-toggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon" id="mode-icon"></i>
+    <span id="mode-label">Dark Mode</span>
+  </button>
+</div>
+
+		
     <nav class="sticky-nav">
         <div class="container">
             <ul>
@@ -25,7 +34,10 @@
             </ul>
         </div>
     </nav>
+	
     
+		
+    </div>
     <header class="landing-section" id="home">
         <div class="container">
             <div class="hero-content">
@@ -134,5 +146,43 @@
     </footer>
     
     <script src="js/script.js"></script>
+	<script>
+    document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+	<script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const icon = document.getElementById('mode-icon');
+    const label = document.getElementById('mode-label');
+
+    function setModeVisuals(isDark) {
+        if (isDark) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            label.textContent = 'Light Mode';
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            label.textContent = 'Dark Mode';
+        }
+    }
+
+    // Load saved preference
+    const isDark = localStorage.getItem('darkMode') === 'enabled';
+    if (isDark) {
+        body.classList.add('dark-mode');
+    }
+    setModeVisuals(isDark);
+
+    toggle.addEventListener('click', function () {
+        const nowDark = body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', nowDark ? 'enabled' : 'disabled');
+        setModeVisuals(nowDark);
+    });
+</script>
+
+
 </body>
 </html>
